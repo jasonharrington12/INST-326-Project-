@@ -205,3 +205,74 @@ def return_book(book_title, user_name):
     """Simulates returning a book."""
     return f"{book_title} returned by {user_name}."
 
+
+# Library Rating and Statistics System
+ReadMe File for Project1Functions.ipynb
+Python functions for tracking ratings and user statistics in a library system.
+
+## What It Does
+
+- Find highest rated books and movies
+- Find unrated books and movies
+- Rank users by books read and movies watched
+
+## Functions
+
+### `get_highest_rated(library)`
+Shows the highest rated book(s).
+
+```python
+library = [
+    {'title': '1984', 'rating': 5},
+    {'title': 'The Hobbit', 'rating': 4}
+]
+get_highest_rated(library)
+```
+
+### `get_unrated_books(library)`
+Shows all books without ratings.
+
+```python
+get_unrated_books(library)
+```
+
+### `get_highest_rated_movie(movies)`
+Shows the highest rated movie(s).
+
+```python
+movies = [
+    {'title': 'The Matrix', 'rating': 5}
+]
+get_highest_rated_movie(movies)
+```
+
+### `get_unrated_movies(movies)`
+Shows all movies without ratings.
+
+```python
+get_unrated_movies(movies)
+```
+
+### `get_top_users(users)`
+Shows users ranked by total books and movies consumed.
+
+```python
+users = [
+    {'name': 'Alice', 'books_read': 15, 'movies_watched': 8},
+    {'name': 'Bob', 'books_read': 10, 'movies_watched': 12}
+]
+get_top_users(users)
+```
+
+## Data Format
+
+**Books/Movies:**
+```python
+{'title': 'Book Title', 'rating': 5}  # or None if unrated
+```
+
+**Users:**
+```python
+{'name': 'Alice', 'books_read': 15, 'movies_watched': 8}
+```
+
