@@ -171,6 +171,3 @@ return_book('The Great Gatsby', 'Alice Smith')
 - Late fees cannot be calculated for negative days
 - Book list dictionaries should include appropriate keys ('genre', 'isbn', etc.) for the functions to work properly
 
-## License
-
-This project is open source and available under the [MIT License](LICENSE).
