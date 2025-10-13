@@ -124,3 +124,9 @@ def show_ratings(library):
 rate_book(library)
 show_ratings(library)
 
+
+## Stevens code review
+##The overall structure is clear — each section (books, movies, ratings) is logically separated and well-commented.
+##The delete_book() function references book["id"], but no "id" field exists in the add_book() function — consider using isbn instead.
+##The rate_book() function’s input() calls make it interactive but limit automation or testing maybe change it a bit for further scalability?
+##Consistent use of docstrings is great; adding return values or type hints would further improve clarity and maintainability
