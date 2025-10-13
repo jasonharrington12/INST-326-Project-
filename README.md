@@ -36,21 +36,7 @@ Features:- Allows users to rate books from a library.- Displays all books and th
  3. Users input a rating between 1 and 5.
  4. The program updates the rating and displays all books with their ratings.
 
-ReadMe File For 311_project.ipynb
-# Library Member and Book Management
 
-## Overview
-This project contains Python functions to manage library members, track available books, and view member borrowing history. It demonstrates basic Python concepts such as lists, dictionaries, loops, and functions.
-
----
-
-## Member List Example
-The library keeps a list of members:
-```python
-member_id = [
-    "John Doe",
-    "Jane Smith",
-    "Alice Lee",
     "Jane Doe",
     "Mary Brown"
 ]
