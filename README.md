@@ -171,3 +171,37 @@ return_book('The Great Gatsby', 'Alice Smith')
 - Late fees cannot be calculated for negative days
 - Book list dictionaries should include appropriate keys ('genre', 'isbn', etc.) for the functions to work properly
 
+
+## ReadMe file for Joseph_Edited-2.ipynb
+# Complex function: Calculate late fees for a book
+def calculate_late_fee(days_late, fee_per_day=0.25):
+    """Calculates the late fee based on days late and fee per day."""
+    if days_late < 0:
+        return "Invalid input: Days late cannot be negative."
+    else:
+        return days_late * fee_per_day
+
+# Medium function: Find books by genre
+def find_books_by_genre(genre, book_list):
+    """Finds books in a list that match a given genre."""
+    matching_books = [book for book in book_list if book['genre'].lower() == genre.lower()]
+    return matching_books
+
+# Small function: Find book by ISBN
+def find_book_by_isbn(isbn, book_list):
+    """Finds a book in a list by its ISBN."""
+    for book in book_list:
+        if book['isbn'] == isbn:
+            return book
+    return "Book not found with that ISBN."
+
+# Small function: Check out a book
+def check_out_book(book_title, user_name):
+    """Simulates checking out a book."""
+    return f"{book_title} checked out by {user_name}."
+
+# Small function: Return a book
+def return_book(book_title, user_name):
+    """Simulates returning a book."""
+    return f"{book_title} returned by {user_name}."
+
