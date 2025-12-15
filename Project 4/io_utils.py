@@ -19,3 +19,4 @@ def import_books_csv(catalog, path: Path):
 def export_report(loan_manager, path: Path):
     with path.open("w", encoding="utf-8") as f:
         json.dump(loan_manager.checkouts, f, indent=2)
+ 
